@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-compatible" content="IF=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>document</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="http://kit.fontawesome.com/b676cb6c0f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+<div id="header">
+<div class="container">
+<nav>
+    <img src="realbg.png" width="300px">
+    <ul>
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#contact">contact</a></li>
+    </ul>
+</nav>
+</div class="header-text">
+<p>welcome to my personel portfolio page</p>
+<h1>Hi i am <span>Sharal</span><br> a web developer</h1>
+</div>
+</div>
+</div>
+<!---------about-------->
+<div id="about">
+<div class="container"></div>
+<div class="row">
+    <div class="about-col-1"></div>
+    <img src="snapme.jpg" width="500px">
+    <div class="about-col-2"> <h1>About me</h1>
+        <p>i am Sharal i am currently pursuing my degree in BBA at St joseph's college hassan and 
+            since i got intrest to learn coding i joined for this web development course in
+             immensphere where i have almost finished learning CSS, HTML AND JAVASCRIPT.  </p>
+
+             <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">skills</p>  
+<p class="tab-links" onclick="opentab('experience')">experience</p>
+<p class="tab-links" onclick="opentab('education')">education</p>
+             </div>
+             <div class="tab-content active-tab" id="skills">
+                <ul>
+                    <li><span>Language skill</span><br>Fluency in English,Hindi and Kannada</li>
+                    <li><span>Web developer</span><br>CSS HTML and JAVASCRIPT</li>
+                    <li><span>Effective commmunicator</span><br>and public speaker</li>
+                </ul>
+             </div>           
+               <div class="tab-content" id="experience">
+                <ul>
+                    <li><span>Am currently a student</span><br>I have worked in journal commetee of our college</li>
+                    <li><span>Web developing</span><br>intern</li>
+                     </ul>
+             </div>             <div class="tab-content" id="education">
+                <ul>
+                    <li><span>Am a commerce student</span><br>I've done HEBA at St philomena college, Hassan</li>
+                    <li><span>Certified in</span><br>Digital fluency</li>
+                    <li><span>Pursuing BBA</span><br>At St joseph's college Hassan</li>
+                </ul>
+             </div>           
+    </div>
+</div>
+</div>
+
+<!-------experience------->
+<div id="achievements">
+    <div class="container">
+        <h1 class="sub-title">My achievements</h1>
+        <div class="achievements">
+<div>
+    <h2> Good Management</h2>
+    <p>I have managed many events in my college and have hosted few many events 
+        and have made them more entertaining and sucessful
+    </p>
+</div>
+        </div>
+    </div>
+</div>
+<!---------projects------->
+<div id="projects">
+    <div class="container">
+<h1 class="sub-title">Projects</h1>
+<p>As a member of journal commette of my college i've worked for publishing of our college journal,
+    which is my only actual project till now and currently as a second main projects i am doing the project which is assigned to me 
+    by immensphere which is to create a portfolio website, is giving me greate experience .
+</p>
+    </div>
+
+</div>
+<!----------contact---------->
+<div id="contact">
+    <div class="container">
+       <div class="row">
+<div class="contact-left">
+    <h1 class="sub-title">Contact me</h1>
+    <p>sharalroy@gmail.com</p>
+    <p>9902528791</p>
+    <div class="social-icons">
+<a href=""><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+<div class="contact-right"></div>
+
+</div>
+</div>
+       </div> 
+    </div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-link");
+    var tabcontents = document.getElementsByClassName("tab-content");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+    </body>
+</html>
